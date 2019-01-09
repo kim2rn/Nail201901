@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NAIL CRONE</title>
+  <link rel="stylesheet" type="text/css" href="css/nail_design.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script>
+  $(function(){
+
+    $("#right").on("click",function(){
+      $("#up_design").animate({
+        'margin-left':'-930px'
+      });
+    });
+
+    $("#left").on("click",function(){
+      $("#up_design").animate({
+        'margin-left':'0px'
+      });
+    });
+
+    $("#bottom_right").on("click",function(){
+      var no = $("#bottom_center").data("id");
+      var next_no = no + 1;
+      var ml = (next_no * -780) + "px";
+
+      if(no < 5){
+        $("#bottom_design").animate({
+          'margin-left': ml
+        });
+        $("#bottom_center").data("id", next_no);
+      }
+
+      // if(no == 1){
+      //   $("#bottom_design").animate({
+      //     'margin-left':'-1560px'
+      //   });
+      //   $("#bottom_center").data("id", 2);
+      // }
+      //
+      // if(no == 2){
+      //   $("#bottom_design").animate({
+      //     'margin-left':'-2340px'
+      //   });
+      //   $("#bottom_center").data("id", 3);
+      // }
+      //
+      // if(no == 3){
+      //   $("#bottom_design").animate({
+      //     'margin-left':'-3120px'
+      //   });
+      //   $("#bottom_center").data("id",4);
+      // }
+      //
+      // if(no == 4){
+      //   $("#bottom_design").animate({
+      //     'margin-left':'-3900px'
+      //   });
+      //   $("#bottom_center").data("id",5);
+      // }
+    });
+
+    $("#bottom_left").on("click",function(){
+      var no = $("#bottom_center").data("id");
+      var next_no = no - 1 ;
+      var ml = (next_no * -780) + "px";
+
+      if(no > 0){
+        $("#bottom_design").animate({
+          'margin-left':ml
+        });
+        $("#bottom_center").data("id",next_no);
+      }
+
+      // if(no == 4){
+      //   $("#bottom_design").animate({
+      //     'margin-left':'-2340px'
+      //   });
+      //   $("#bottom_center").data("id",3);
+      // }
+      //
+      // if(no == 3){
+      //   $("#bottom_design").animate({
+      //     'margin-left':'-1560px'
+      //   });
+      //   $("#bottom_center").data("id",2);
+      // }
+      //
+      // if(no == 2){
+      //   $("#bottom_design").animate({
+      //     'margin-left':'-780px'
+      //   });
+      //   $("#bottom_center").data("id",1);
+      // }
+      //
+      // if(no == 1){
+      //   $("#bottom_design").animate({
+      //     'margin-left':'0px'
+      //   });
+      //   $("#bottom_center").data("id",0);
+      // }
+    });
+
+    $("#up_design li").on("click",function(){
+      var info = $("#up_design li").index(this) + 1;
+      // alert(info);
+
+      for(var i = 0; i < 6; i++){
+        $("#bottom_design li:eq(" + i + ") img").attr("src", "img/nail_design/nail" + info + "/photo" + (i+1) + ".jpg");
+        //alert(i);
+      };
+
+      // alert($("#bottom_center").data("id"));
+      $("#bottom_design").animate({
+        'margin-left':'0px'
+      });
+      $("#bottom_center").data("id", 0);
+
+      var no2 = (info - 1 )* -800 + "px";
+      // alert(no2);
+    $("#middle_message_text").animate({
+      'margin-left':no2
+    });
+    });
+
+    // $("#message_text").on("click",function(){
+    //   var info =
+    //
+    // }
+
+    // $("#bottom_design li:eq(0) img").attr("src", "img/nail_design/nail" + info + "/photo1.jpg");
+    // $("#bottom_design li:eq(1) img").attr("src", "img/nail_design/nail" + info + "/photo2.jpg");
+    // $("#bottom_design li:eq(2) img").attr("src", "img/nail_design/nail" + info + "/photo3.jpg");
+    // $("#bottom_design li:eq(3) img").attr("src", "img/nail_design/nail" + info + "/photo4.jpg");
+    // $("#bottom_design li:eq(4) img").attr("src", "img/nail_design/nail" + info + "/photo5.jpg");
+    // $("#bottom_design li:eq(5) img").attr("src", "img/nail_design/nail" + info + "/photo6.jpg");
+
+
+
+  });
+
+  </script>
+</head>
+<body>
+  <div id="header" class="clearfix">
+    <div id="logo">
+      <a href="index.php">
+        <img src="img/base/logo.png" alt="NAIL CRONE">
+      </a>
+    </div>
+    <div id="head_contact">
+      <p>070-6979-8217</p>
+      <p>info@nail-crone.com</p>
+    </div>
+  </div>
+  <div id="menu">
+    <ul>
+      <li>HOME</li>
+      <li>CONTEST</li>
+      <li>MENU</li>
+      <li>NAIL DESIGN</li>
+      <li>ACCESS</li>
+      <li>RESERVE</li>
+    </ul>
+  </div>
+  <div id="wrapper">
+    <div id="line">
+      <img src="img/base/line.png" alt="飾り">
+    </div>
+    <div id="top_tiara">
+      <img src="img/base/illust1_top.png" alt="ティアラ">
+    </div>
+    <div id="up">
+      <div id="left">
+        <img src="img/nail_design/thumb_prev.png">
+      </div>
+      <div id="center">
+        <ul id="up_design" data-id=0>
+          <li><img src="img/nail_design/nail1/photo1.jpg"></li>
+          <li><img src="img/nail_design/nail2/photo1.jpg"></li>
+          <li><img src="img/nail_design/nail3/photo1.jpg"></li>
+          <li><img src="img/nail_design/nail4/photo1.jpg"></li>
+          <li><img src="img/nail_design/nail5/photo1.jpg"></li>
+          <li><img src="img/nail_design/nail6/photo1.jpg"></li>
+        </ul>
+      </div>
+      <div id="right">
+        <img src="img/nail_design/thumb_next.png">
+      </div>
+    </div>
+    <div id="down">
+      <div id="bottom_left">
+        <img src="img/nail_design/photo_prev.png">
+      </div>
+      <div id="bottom_center" data-id=0>
+        <ul id="bottom_design">
+          <li><img src="img/nail_design/nail1/photo1.jpg"></li>
+          <li><img src="img/nail_design/nail1/photo2.jpg"></li>
+          <li><img src="img/nail_design/nail1/photo3.jpg"></li>
+          <li><img src="img/nail_design/nail1/photo4.jpg"></li>
+          <li><img src="img/nail_design/nail1/photo5.jpg"></li>
+          <li><img src="img/nail_design/nail1/photo6.jpg"></li>
+        </ul>
+      </div>
+      <div id="bottom_right">
+        <img src="img/nail_design/photo_next.png">
+      </div>
+    </div>
+<div id="all_message_text">
+  <div id="middle_message_text">
+    <div class="message_text" >
+      <p>☆クロス×ピーコックで夏の装い</p>
+      <p>涼しげなターコイズをメインに、今話題のメタリックパウダーブルーで差し色。</p>
+      <p>今年の夏は派手目にチャレンジ！！！</p>
+    </div>
+    <div class="message_text">
+      <p>💓フレンチ×Vカットストーン</p>
+      <p>シンプルなラメライン無しのフレンチに</p>
+      <p>ポイントでVカットストーンを乗せ、華やかに仕上げました。</p>
+    </div>
+    <div class="message_text">
+      <p>☆クロス×ピーコックで夏の装い</p>
+      <p>涼しげなターコイズをメインに、今話題のメタリックパウダーブルーで差し色。</p>
+      <p>今年の夏は派手目にチャレンジ！！！</p>
+    </div>
+    <div class="message_text">
+      <p>💓フレンチ×Vカットストーン</p>
+      <p>シンプルなラメライン無しのフレンチに</p>
+      <p>ポイントでVカットストーンを乗せ、華やかに仕上げました。</p>
+    </div>
+    <div class="message_text">
+      <p>☆クロス×ピーコックで夏の装い</p>
+      <p>涼しげなターコイズをメインに、今話題のメタリックパウダーブルーで差し色。</p>
+      <p>今年の夏は派手目にチャレンジ！！！</p>
+    </div>
+    <div class="message_text">
+      <p>💓フレンチ×Vカットストーン</p>
+      <p>シンプルなラメライン無しのフレンチに</p>
+      <p>ポイントでVカットストーンを乗せ、華やかに仕上げました。</p>
+    </div>
+  </div>
+</div>
+</div>
+<div id="bottom_tiara">
+  <img src="img/base/illust1_bottom.png">
+</div>
+<div id="line" alt="飾り">
+  <img src="img/base/line.png">
+</div>
+<div id="foot" alt="エンド画像">
+  <img src="img/base/bg_footer.png">
+</div>
+
+</body>
+</html>

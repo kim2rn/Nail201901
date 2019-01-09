@@ -1,0 +1,81 @@
+@import "base.css";
+
+#main_image{
+	width:100%;
+	background:url(../img/base/main_img_bg.png);
+}
+#main_image img{
+	margin:0 auto;
+}
+#bg_wood{
+	width:100%;
+	height:40px;
+	background:url(../img/base/bg_wood.png);
+}
+#top_tiara img {
+	margin:20px auto;
+}
+#text img {
+	margin:0 auto;
+}
+#course_select img {
+	margin:0 auto;
+}
+#course_menu img {
+	margin:10px auto;
+}
+#all_course {
+	width:960px;
+	margin:0 auto;
+}
+#course1 {
+	margin:0 50px;
+	float:left;
+}
+#course2 {
+	margin:0 50px;
+	float:left;
+}
+#course3 {
+	margin:0 50px;
+	float:left;
+}
+#bottom_tiara img {
+	clear:both;
+	margin:20px auto;
+}
+#nail_design img {
+	margin:30px auto;
+}
+#up_sample{
+	width:960px;
+	margin:0 auto;
+}
+#sample1 {
+	margin:0 auto;
+	float:left;
+}
+#sample2 {
+	margin:0 auto;
+	float:left;
+}
+#sample3 {
+	margin:0 auto;
+	float:left;
+}
+#down_sample{
+	width:960px;
+	margin:0 auto;
+}
+#sample4 {
+	margin:20px auto;
+	float:left;
+}
+#sample5 {
+	margin:20px auto;
+	float:left;
+}
+#sample6 {
+	margin:20px auto;
+	float:left;
+}

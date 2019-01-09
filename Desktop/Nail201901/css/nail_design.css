@@ -1,0 +1,102 @@
+@import "base.css";
+
+#top_tiara img {
+	margin:0 auto;
+
+}
+#up {
+	margin:10px auto;
+	width:1000px;
+	height:215px;
+}
+#left {
+	float:left;
+	margin-right:5px;
+	cursor:pointer;
+}
+
+#center {
+  float:left;
+	height:200px;
+	width:930px;
+	overflow:hidden;
+
+}
+#center ul {
+	width:1860px;
+	height:200px;
+}
+#center ul li img {
+	width:300px;
+	margin:0 5px;
+	float:left;
+	cursor:pointer;
+
+}
+#right{
+	float:left;
+	margin-left:5px;
+	cursor:pointer;
+}
+#down {
+	width:840px;
+ height:520px;
+	margin:0 auto;
+}
+#bottom_left {
+	float:left;
+	cursor:pointer;
+}
+#bottom_center {
+	height:520px;
+	width:780px;
+	float:left;
+	overflow:hidden;
+}
+#bottom_center ul {
+	width:4860px;
+	height:520px;
+}
+#bottom_center ul li img {
+	width:780px;
+	height:520px;
+	float:left;
+}
+#bottom_right {
+	float:left;
+	cursor:pointer;
+}
+
+#all_message_text {
+	clear:both;
+	background-image:url(../img/nail_design/description_bg.png);
+  background-size:100% 100%;
+	width:800px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#middle_message_text {
+	clear:both;
+	width:4800px;
+
+}
+
+
+.message_text {
+	width:800px;
+	margin:40px auto;
+	padding:40px;
+  float:left;
+}
+.message_text p {
+	text-align:center;
+}
+
+#bottom_tiara img {
+clear:both;
+margin:0 auto;
+}
+#line {
+	clear:both;
+}

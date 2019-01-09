@@ -1,0 +1,90 @@
+@import "base.css";
+
+#main_image img {
+  margin:0 auto;
+}
+#top_tiara img {
+  margin:20px auto;
+}
+#course_select img {
+  margin:0 auto;
+}
+#all_course{
+  background-color:#f6eed1;
+  background-size:contain;
+  margin-top:20px;
+  padding:10px;
+}
+#all_course p{
+  text-align:center;
+}
+#all_course .course_index {
+  font-weight:bold;
+  font-size:22px;
+}
+#all_box1 {
+  width:960px;
+  margin:0 auto;
+  height:70px;
+}
+#all_box1 .box {
+  width:150px;
+  margin:0 5px;
+  padding:5px;
+  float:left;
+  background-image:url(../img/reserve/select_off.png);
+  background-size:contain;
+  cursor:pointer;
+}
+#all_box1 .box p {
+color:#fff;
+font-size:12px;
+font-weight:bold;
+}
+#all_course2 {
+  background-color:#f6eed1;
+  margin-top:10px;
+  padding:10px;
+}
+#all_course2 p {
+  text-align:center;
+}
+#all_course2 .course_index {
+  font-weight:bold;
+  font-size:22px;
+}
+#all_box2 {
+  width:800px;
+  height:110px;
+  margin:0 auto;
+}
+#all_box2 .box2 {
+  width:330px;
+  margin:33px;
+  float:left;
+  background-image:url(../img/reserve/select_off.png);
+  background-size:contain;
+}
+#all_box2 .box2 p {
+  font-weight:bold;
+  font-size:12px;
+  color:#fff;
+}
+#all_course3 {
+  background-color:#f6eed1;
+  margin-top:10px;
+  padding:10px;
+}
+#all_course3 .course_index {
+  text-align:center;
+  font-weight:bold;
+  font-size:22px;
+}
+#all_box3 .box3 {
+  width:300px;
+  float:left;
+}
+#all_box3 .box3 p {
+  text-align:center;
+  font-size:12px;
+}
